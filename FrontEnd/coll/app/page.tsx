@@ -30,7 +30,7 @@ export default function Home() {
             <div className="hidden md:flex space-x-8">
               <Link href="#home" className="text-gray-700 hover:text-blue-600 transition">Home</Link>
               <Link href="#academics" className="text-gray-700 hover:text-blue-600 transition">Academics</Link>
-              <Link href="#about" className="text-gray-700 hover:text-blue-600 transition">About</Link>
+              <Link href="about" className="text-gray-700 hover:text-blue-600 transition">About</Link>
               <Link href="#admissions" className="text-gray-700 hover:text-blue-600 transition">Admissions</Link>
               <Link href="#contact" className="text-gray-700 hover:text-blue-600 transition">Contact</Link>
             </div>
