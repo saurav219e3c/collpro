@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12">
@@ -6,7 +8,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">About</h4>
             <ul className="space-y-2">
-              <li><a href="#about" className="hover:text-white transition">About Us</a></li>
+              <li><Link href="/about" className="hover:text-white transition">About Us</Link></li>
               <li><a href="#" className="hover:text-white transition">History</a></li>
               <li><a href="#" className="hover:text-white transition">Mission & Vision</a></li>
             </ul>
@@ -14,7 +16,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Academics</h4>
             <ul className="space-y-2">
-              <li><a href="#academics" className="hover:text-white transition">Programs</a></li>
+              <li><Link href="/academics" className="hover:text-white transition">Programs</Link></li>
               <li><a href="#" className="hover:text-white transition">Departments</a></li>
               <li><a href="#" className="hover:text-white transition">Faculty</a></li>
             </ul>
@@ -22,7 +24,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Admissions</h4>
             <ul className="space-y-2">
-              <li><a href="#admissions" className="hover:text-white transition">Apply</a></li>
+              <li><Link href="/admissions" className="hover:text-white transition">Apply</Link></li>
               <li><a href="#" className="hover:text-white transition">Eligibility</a></li>
               <li><a href="#" className="hover:text-white transition">Scholarships</a></li>
             </ul>
@@ -30,9 +32,9 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Contact</h4>
             <ul className="space-y-2">
+              <li><Link href="/contact" className="hover:text-white transition">Contact Page</Link></li>
               <li>Email: info@academy.edu</li>
               <li>Phone: +1 (555) 123-4567</li>
-              <li>Address: 123 Education St, City</li>
             </ul>
           </div>
         </div>

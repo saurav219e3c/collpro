@@ -66,20 +66,20 @@ export default function Header() {
       <header className="bg-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-2" onClick={() => setOpen(false)}>
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">A</span>
               </div>
               <span className="text-xl font-bold text-gray-900">Academy</span>
-            </div>
+            </Link>
 
             {/* Desktop nav */}
             <div className="hidden md:flex space-x-8">
-              <Link href="#home" className="text-gray-700 hover:text-blue-600 transition">Home</Link>
-              <Link href="#academics" className="text-gray-700 hover:text-blue-600 transition">Academics</Link>
-              <Link href="about" className="text-gray-700 hover:text-blue-600 transition">About</Link>
-              <Link href="#admissions" className="text-gray-700 hover:text-blue-600 transition">Admissions</Link>
-              <Link href="#contact" className="text-gray-700 hover:text-blue-600 transition">Contact</Link>
+              <Link href="/" className="text-gray-700 hover:text-blue-600 transition">Home</Link>
+              <Link href="/academics" className="text-gray-700 hover:text-blue-600 transition">Academics</Link>
+              <Link href="/about" className="text-gray-700 hover:text-blue-600 transition">About</Link>
+              <Link href="/admissions" className="text-gray-700 hover:text-blue-600 transition">Admissions</Link>
+              <Link href="/contact" className="text-gray-700 hover:text-blue-600 transition">Contact</Link>
             </div>
 
             <div className="flex items-center">
@@ -120,12 +120,12 @@ export default function Header() {
         aria-modal="true"
       >
         <div className="h-16 flex items-center justify-between px-4 border-b">
-          <div className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2" onClick={() => setOpen(false)}>
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">A</span>
             </div>
             <span className="font-semibold">Academy</span>
-          </div>
+          </Link>
           <button aria-label="Close menu" onClick={() => setOpen(false)} className="p-2 rounded-md">
             <svg className="h-6 w-6 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -133,12 +133,12 @@ export default function Header() {
           </button>
         </div>
 
-        <nav className="p-4 space-y-4">
-          <Link href="#home" onClick={() => setOpen(false)} className="block text-gray-800 text-lg">Home</Link>
-          <Link href="#academics" onClick={() => setOpen(false)} className="block text-gray-800 text-lg">Academics</Link>
-          <Link href="about" onClick={() => setOpen(false)} className="block text-gray-800 text-lg">About</Link>
-          <Link href="#admissions" onClick={() => setOpen(false)} className="block text-gray-800 text-lg">Admissions</Link>
-          <Link href="#contact" onClick={() => setOpen(false)} className="block text-gray-800 text-lg">Contact</Link>
+          <nav className="p-4 space-y-4">
+          <Link href="/" onClick={() => setOpen(false)} className="block text-gray-800 text-lg">Home</Link>
+          <Link href="/academics" onClick={() => setOpen(false)} className="block text-gray-800 text-lg">Academics</Link>
+          <Link href="/about" onClick={() => setOpen(false)} className="block text-gray-800 text-lg">About</Link>
+          <Link href="/admissions" onClick={() => setOpen(false)} className="block text-gray-800 text-lg">Admissions</Link>
+          <Link href="/contact" onClick={() => setOpen(false)} className="block text-gray-800 text-lg">Contact</Link>
 
           <div className="pt-4">
             <button onClick={() => setOpen(false)} className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">Apply Now</button>

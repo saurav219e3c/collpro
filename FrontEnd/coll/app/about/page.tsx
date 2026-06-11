@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import Header from "../landing/Header";
-import Footer from "../landing/Footer";
+
 
 export default function AboutPage() {
   return (
     <main>
-      <Header />
+      
+     
       {/* Hero */}
       <section className="relative bg-gray-800 text-white">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center opacity-80" />
@@ -145,7 +145,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <Footer />
+      
+      
     </main>
   );
 }

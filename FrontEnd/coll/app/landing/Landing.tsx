@@ -19,7 +19,6 @@ export default function Landing() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
 
       {/* Hero Section - full background carousel with overlay text */}
       <section id="home" className="relative">
@@ -213,7 +212,7 @@ export default function Landing() {
         </div>
       </section>
 
-      <Footer />
+      
     </div>
   );
 }
