@@ -91,13 +91,14 @@ export default function Header() {
               <Link href="/academics" className={navClass('/academics')} aria-current={isActive('/academics') ? 'page' : undefined}>Academics</Link>
               <Link href="/about" className={navClass('/about')} aria-current={isActive('/about') ? 'page' : undefined}>About</Link>
               <Link href="/admissions" className={navClass('/admissions')} aria-current={isActive('/admissions') ? 'page' : undefined}>Admissions</Link>
+              <Link href="/notice-board" className={navClass('/notice-board')} aria-current={isActive('/notice-board') ? 'page' : undefined}>Notice Board</Link>
               <Link href="/contact" className={navClass('/contact')} aria-current={isActive('/contact') ? 'page' : undefined}>Contact</Link>
             </div>
 
             <div className="flex items-center">
               {/* Apply button visible on md+ */}
               <div className="hidden md:flex items-center gap-3">
-                <Link href="/login" className="hidden md:inline-block border border-orange-600 text-orange-600 px-4 py-2 rounded-lg font-medium hover:bg-orange-50 transition">Student Login</Link>
+                <Link href="/student/login" className="hidden md:inline-block border border-orange-600 text-orange-600 px-4 py-2 rounded-lg font-medium hover:bg-orange-50 transition">Student Login</Link>
                 <button className="bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition">
                   Apply Now
                 </button>
@@ -151,10 +152,11 @@ export default function Header() {
           <Link href="/academics" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/academics') ? 'text-orange-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/academics') ? 'page' : undefined}>Academics</Link>
           <Link href="/about" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/about') ? 'text-orange-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/about') ? 'page' : undefined}>About</Link>
           <Link href="/admissions" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/admissions') ? 'text-orange-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/admissions') ? 'page' : undefined}>Admissions</Link>
+          <Link href="/notice-board" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/notice-board') ? 'text-orange-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/notice-board') ? 'page' : undefined}>Notice Board</Link>
           <Link href="/contact" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/contact') ? 'text-orange-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/contact') ? 'page' : undefined}>Contact</Link>
 
           <div className="pt-4 space-y-3">
-            <Link href="/login" onClick={() => setOpen(false)} className="block w-full text-center text-orange-600 font-semibold px-4 py-3 rounded-lg border border-orange-100 hover:bg-orange-50">Student Login</Link>
+            <Link href="/student/login" onClick={() => setOpen(false)} className="block w-full text-center text-orange-600 font-semibold px-4 py-3 rounded-lg border border-orange-100 hover:bg-orange-50">Student Login</Link>
             <button onClick={() => setOpen(false)} className="w-full bg-orange-600 text-white px-4 py-3 rounded-lg">Apply Now</button>
           </div>
         </nav>

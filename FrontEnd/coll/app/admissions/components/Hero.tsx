@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Hero() {
   return (
     <section className="bg-white py-16">
@@ -7,8 +9,9 @@ export default function Hero() {
           Admissions for our clinical and allied health programs prioritize hands-on readiness, verified
           prerequisites, and a commitment to patient-centered care. Check eligibility and apply.
         </p>
-        <div className="mt-6">
-          <a href="/contact" className="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow">Contact Admissions</a>
+        <div className="mt-6 flex justify-center gap-4">
+          <Link href="/contact" className="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow">Contact Admissions</Link>
+          <Link href="/admissions/fee-structure" className="inline-block bg-white text-orange-700 px-6 py-3 rounded-lg font-semibold border border-orange-700">Fee Structure</Link>
         </div>
       </div>
     </section>
