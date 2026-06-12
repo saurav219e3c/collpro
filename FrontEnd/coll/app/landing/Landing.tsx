@@ -41,7 +41,7 @@ export default function Landing() {
           {/* Overlay content */}
           <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 h-full flex items-center">
             <div className="text-white max-w-2xl">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight drop-shadow-lg">Shape Your Future at Our Academy</h1>
+              <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight drop-shadow-lg">Shape Your Future at ABC College</h1>
               <p className="text-lg md:text-xl text-white/90 mb-6 drop-shadow">
                 World-class education with cutting-edge facilities and experienced faculty dedicated to your success.
               </p>

@@ -33,13 +33,13 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Contact</h4>
             <ul className="space-y-2">
               <li><Link href="/contact" className="hover:text-white transition">Contact Page</Link></li>
-              <li>Email: info@academy.edu</li>
+              <li>Email: info@abccollege.edu</li>
               <li>Phone: +1 (555) 123-4567</li>
             </ul>
           </div>
         </div>
         <div className="border-t border-gray-700 pt-8 text-center">
-          <p>&copy; 2026 Academy. All rights reserved.</p>
+          <p>&copy; 2026 ABC College. All rights reserved.</p>
         </div>
       </div>
     </footer>

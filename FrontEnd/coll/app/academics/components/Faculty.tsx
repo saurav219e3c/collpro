@@ -1,8 +1,8 @@
 export default function Faculty() {
   const faculty = [
-    { name: 'Dr. Neha Rao', title: 'Head - Department of Nursing', expertise: 'Clinical Nursing, Paediatric Care', email: 'neha.rao@academy.edu' },
-    { name: 'Ms. Ritu Sharma', title: 'Senior Lecturer - ANM & GNM', expertise: 'Midwifery, Community Health', email: 'ritu.sharma@academy.edu' },
-    { name: 'Mr. Arun Patel', title: 'Coordinator - Paramedical Programs', expertise: 'Emergency Care, Lab Tech', email: 'arun.patel@academy.edu' },
+    { name: 'Dr. Neha Rao', title: 'Head - Department of Nursing', expertise: 'Clinical Nursing, Paediatric Care', email: 'neha.rao@abccollege.edu' },
+    { name: 'Ms. Ritu Sharma', title: 'Senior Lecturer - ANM & GNM', expertise: 'Midwifery, Community Health', email: 'ritu.sharma@abccollege.edu' },
+    { name: 'Mr. Arun Patel', title: 'Coordinator - Paramedical Programs', expertise: 'Emergency Care, Lab Tech', email: 'arun.patel@abccollege.edu' },
   ];
 
   return (

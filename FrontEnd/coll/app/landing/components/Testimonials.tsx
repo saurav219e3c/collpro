@@ -1,6 +1,6 @@
 export default function Testimonials() {
   const testimonials = [
-    { name: 'Aisha Khan', role: 'Alumni, Registered Nurse', quote: 'The academy transformed my career — clinical training and mentors prepared me for the ward.' },
+    { name: 'Aisha Khan', role: 'Alumni, Registered Nurse', quote: 'ABC College transformed my career — clinical training and mentors prepared me for the ward.' },
     { name: 'Ravi Patel', role: 'Current Student, BSc Nursing', quote: 'Simulation labs and hands-on practice gave me the confidence to care for patients.' },
     { name: 'Maria Lopez', role: 'Alumni, Physiotherapy Assistant', quote: 'The placement cell connected me with a great first role in allied health.' },
   ];

@@ -10,7 +10,7 @@ export default function AboutPage() {
       <section className="relative bg-gray-800 text-white">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center opacity-80" />
         <div className="relative max-w-7xl mx-auto px-6 py-24 md:py-32">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight drop-shadow">About the Academy</h1>
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight drop-shadow">About ABC College</h1>
           <p className="mt-4 text-lg md:text-xl text-white/90 max-w-2xl">We prepare students for meaningful careers and civic life through exceptional teaching, research, and community engagement.</p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link href="#mission" className="bg-white text-orange-700 px-5 py-3 rounded-lg font-semibold hover:bg-gray-100">Our Mission</Link>
@@ -51,7 +51,7 @@ export default function AboutPage() {
 
               <div className="p-6 bg-gray-100 rounded-lg">
                 <h4 className="font-semibold">Contact</h4>
-                <p className="text-sm text-gray-600 mt-2">Email: info@academy.edu<br/>Phone: +1 (555) 123-4567</p>
+                <p className="text-sm text-gray-600 mt-2">Email: info@abccollege.edu<br/>Phone: +1 (555) 123-4567</p>
               </div>
             </aside>
           </div>

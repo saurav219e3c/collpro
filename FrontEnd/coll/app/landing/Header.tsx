@@ -82,7 +82,7 @@ export default function Header() {
               <div className="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">A</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">Academy</span>
+              <span className="text-xl font-bold text-black">ABC College</span>
             </Link>
 
             {/* Desktop nav */}
@@ -137,7 +137,7 @@ export default function Header() {
             <div className="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">A</span>
             </div>
-            <span className="font-semibold">Academy</span>
+            <span className="font-semibold text-black">ABC College</span>
           </Link>
           <button aria-label="Close menu" onClick={() => setOpen(false)} className="p-2 rounded-md">
             <svg className="h-6 w-6 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
