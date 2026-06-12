@@ -34,7 +34,7 @@ export default function StudentLoginPage() {
               type="text"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-200"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-200 text-black font-semibold"
               placeholder="student@abccollege.edu or ID"
             />
           </div>
@@ -45,7 +45,7 @@ export default function StudentLoginPage() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-200"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-200 text-black font-semibold"
               placeholder="Enter your password"
             />
           </div>
