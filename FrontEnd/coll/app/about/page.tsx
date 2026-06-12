@@ -28,13 +28,13 @@ export default function AboutPage() {
               <p className="mt-4 text-gray-600 leading-relaxed">Our mission is to empower learners with knowledge, critical thinking, and practical skills. We envision an inclusive institution where students from diverse backgrounds thrive, innovate, and contribute to society.</p>
 
               <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="p-6 bg-gray-50 rounded-lg shadow-sm">
+                <div className="p-6 bg-gradient-to-b from-white to-gray-50 rounded-xl shadow-lg border border-gray-100">
                   <h3 className="font-semibold text-gray-800">Academic Excellence</h3>
-                  <p className="mt-2 text-gray-600">Rigorous programs, research-led teaching and strong industry partnerships.</p>
+                  <p className="mt-2 text-gray-600">Rigorous programs, clinical simulation labs and strong healthcare partnerships.</p>
                 </div>
-                <div className="p-6 bg-gray-50 rounded-lg shadow-sm">
+                <div className="p-6 bg-gradient-to-b from-white to-gray-50 rounded-xl shadow-lg border border-gray-100">
                   <h3 className="font-semibold text-gray-800">Student Success</h3>
-                  <p className="mt-2 text-gray-600">Comprehensive support services, career guidance and experiential learning.</p>
+                  <p className="mt-2 text-gray-600">Comprehensive support services, placement assistance and experiential learning.</p>
                 </div>
               </div>
             </div>
@@ -89,21 +89,21 @@ export default function AboutPage() {
           <p className="mt-3 text-gray-600">A dedicated leadership team and experienced faculty guide our academic mission.</p>
 
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <article className="p-6 bg-gray-50 rounded-lg shadow-sm">
+            <article className="p-6 bg-gradient-to-b from-white to-gray-50 rounded-xl shadow-lg border border-gray-100">
               <div className="h-36 bg-blue-200 rounded-md mb-4" />
               <h3 className="font-semibold">Dr. Anya Patel</h3>
               <p className="text-sm text-gray-600">President</p>
               <p className="mt-3 text-sm text-gray-600">Leading institutional strategy and academic growth initiatives.</p>
             </article>
 
-            <article className="p-6 bg-gray-50 rounded-lg shadow-sm">
+            <article className="p-6 bg-gradient-to-b from-white to-gray-50 rounded-xl shadow-lg border border-gray-100">
               <div className="h-36 bg-green-200 rounded-md mb-4" />
               <h3 className="font-semibold">Prof. Michael Chen</h3>
-              <p className="text-sm text-gray-600">Dean of Engineering</p>
-              <p className="mt-3 text-sm text-gray-600">Focused on research, industry partnerships and student mentorship.</p>
+              <p className="text-sm text-gray-600">Dean of Health Sciences</p>
+              <p className="mt-3 text-sm text-gray-600">Focused on clinical partnerships, simulation labs, and student mentorship.</p>
             </article>
 
-            <article className="p-6 bg-gray-50 rounded-lg shadow-sm">
+            <article className="p-6 bg-gradient-to-b from-white to-gray-50 rounded-xl shadow-lg border border-gray-100">
               <div className="h-36 bg-purple-200 rounded-md mb-4" />
               <h3 className="font-semibold">Dr. Sara Gomez</h3>
               <p className="text-sm text-gray-600">Director of Student Affairs</p>
@@ -120,11 +120,11 @@ export default function AboutPage() {
           <ol className="mt-6 border-l-2 border-gray-200">
             <li className="pl-6 pb-6">
               <span className="text-sm font-semibold text-gray-700">1998</span>
-              <p className="text-gray-600">Founded as a small college focused on engineering and sciences.</p>
+              <p className="text-gray-600">Founded as a small college focused on health sciences and community care.</p>
             </li>
             <li className="pl-6 pb-6">
               <span className="text-sm font-semibold text-gray-700">2010</span>
-              <p className="text-gray-600">Expanded with business and arts programs; launched first international partnerships.</p>
+              <p className="text-gray-600">Expanded with nursing and allied health programs and launched community partnerships.</p>
             </li>
             <li className="pl-6 pb-6">
               <span className="text-sm font-semibold text-gray-700">2020</span>

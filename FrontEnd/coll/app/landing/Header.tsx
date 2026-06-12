@@ -1,8 +1,10 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+  const pathname = usePathname() || "/";
   const [open, setOpen] = useState(false);
   const touchStartX = useRef<number | null>(null);
   const touchCurrentX = useRef<number | null>(null);
@@ -15,6 +17,16 @@ export default function Header() {
       document.body.style.overflow = "";
     };
   }, [open]);
+
+  const isActive = (p: string) => {
+    if (p === "/") return pathname === "/";
+    return pathname.startsWith(p);
+  };
+
+  const navClass = (p: string) =>
+    isActive(p)
+      ? "text-blue-600 font-semibold"
+      : "text-gray-700 hover:text-blue-600 transition";
 
   useEffect(() => {
     const onTouchStart = (e: TouchEvent) => {
@@ -75,11 +87,11 @@ export default function Header() {
 
             {/* Desktop nav */}
             <div className="hidden md:flex space-x-8">
-              <Link href="/" className="text-gray-700 hover:text-blue-600 transition">Home</Link>
-              <Link href="/academics" className="text-gray-700 hover:text-blue-600 transition">Academics</Link>
-              <Link href="/about" className="text-gray-700 hover:text-blue-600 transition">About</Link>
-              <Link href="/admissions" className="text-gray-700 hover:text-blue-600 transition">Admissions</Link>
-              <Link href="/contact" className="text-gray-700 hover:text-blue-600 transition">Contact</Link>
+              <Link href="/" className={navClass('/')} aria-current={isActive('/') ? 'page' : undefined}>Home</Link>
+              <Link href="/academics" className={navClass('/academics')} aria-current={isActive('/academics') ? 'page' : undefined}>Academics</Link>
+              <Link href="/about" className={navClass('/about')} aria-current={isActive('/about') ? 'page' : undefined}>About</Link>
+              <Link href="/admissions" className={navClass('/admissions')} aria-current={isActive('/admissions') ? 'page' : undefined}>Admissions</Link>
+              <Link href="/contact" className={navClass('/contact')} aria-current={isActive('/contact') ? 'page' : undefined}>Contact</Link>
             </div>
 
             <div className="flex items-center">
@@ -134,11 +146,11 @@ export default function Header() {
         </div>
 
           <nav className="p-4 space-y-4">
-          <Link href="/" onClick={() => setOpen(false)} className="block text-gray-800 text-lg">Home</Link>
-          <Link href="/academics" onClick={() => setOpen(false)} className="block text-gray-800 text-lg">Academics</Link>
-          <Link href="/about" onClick={() => setOpen(false)} className="block text-gray-800 text-lg">About</Link>
-          <Link href="/admissions" onClick={() => setOpen(false)} className="block text-gray-800 text-lg">Admissions</Link>
-          <Link href="/contact" onClick={() => setOpen(false)} className="block text-gray-800 text-lg">Contact</Link>
+          <Link href="/" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/') ? 'text-blue-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/') ? 'page' : undefined}>Home</Link>
+          <Link href="/academics" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/academics') ? 'text-blue-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/academics') ? 'page' : undefined}>Academics</Link>
+          <Link href="/about" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/about') ? 'text-blue-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/about') ? 'page' : undefined}>About</Link>
+          <Link href="/admissions" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/admissions') ? 'text-blue-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/admissions') ? 'page' : undefined}>Admissions</Link>
+          <Link href="/contact" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/contact') ? 'text-blue-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/contact') ? 'page' : undefined}>Contact</Link>
 
           <div className="pt-4">
             <button onClick={() => setOpen(false)} className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">Apply Now</button>

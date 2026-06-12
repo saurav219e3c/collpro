@@ -1,8 +1,10 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import CampusFacilities from "./components/CampusFacilities";
+import TrainingPlacement from "./components/TrainingPlacement";
+import Testimonials from "./components/Testimonials";
+
 
 export default function Landing() {
   const images = [
@@ -100,38 +102,47 @@ export default function Landing() {
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden">
               <div className="h-48 bg-gradient-to-r from-blue-400 to-blue-600"></div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Engineering</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">BSc Nursing</h3>
                 <p className="text-gray-600 mb-4">
-                  Cutting-edge engineering programs with hands-on laboratory experience and industry internships.
+                  Comprehensive nursing program combining clinical practice and theoretical knowledge to prepare professional nurses.
                 </p>
-                <Link href="#" className="text-blue-600 font-semibold hover:text-blue-800 transition">Learn More →</Link>
+                <Link href="/academics" className="text-blue-600 font-semibold hover:text-blue-800 transition">Learn More →</Link>
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden">
               <div className="h-48 bg-gradient-to-r from-purple-400 to-purple-600"></div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Business & Management</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">ANM &amp; GNM</h3>
                 <p className="text-gray-600 mb-4">
-                  Develop leadership and entrepreneurial skills with our comprehensive business programs.
+                  Auxiliary Nurse Midwifery (ANM) and General Nursing &amp; Midwifery (GNM) programs with strong community health focus.
                 </p>
-                <Link href="#" className="text-blue-600 font-semibold hover:text-blue-800 transition">Learn More →</Link>
+                <Link href="/academics" className="text-blue-600 font-semibold hover:text-blue-800 transition">Learn More →</Link>
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden">
               <div className="h-48 bg-gradient-to-r from-green-400 to-green-600"></div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">Computer Science</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Paramedical Courses</h3>
                 <p className="text-gray-600 mb-4">
-                  Master the latest technologies in AI, web development, and cloud computing.
+                  Short and long-term paramedical programs including lab technology, radiography, physiotherapy assistance and allied health training.
                 </p>
-                <Link href="#" className="text-blue-600 font-semibold hover:text-blue-800 transition">Learn More →</Link>
+                <Link href="/academics" className="text-blue-600 font-semibold hover:text-blue-800 transition">Learn More →</Link>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Campus Facilities */}
+      <CampusFacilities />
+
+      {/* Training & Placement */}
+      <TrainingPlacement />
+
+      {/* Student Testimonials */}
+      <Testimonials />
 
       {/* Why Choose Us */}
       <section className="bg-gray-50 py-20">
