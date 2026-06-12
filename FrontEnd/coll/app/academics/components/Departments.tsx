@@ -35,11 +35,11 @@ export default function Departments() {
               <p className="text-gray-600 mt-2">{d.desc}</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {d.focus.map((f) => (
-                  <span key={f} className="text-sm bg-blue-50 text-blue-700 px-2 py-1 rounded-md border border-blue-100">{f}</span>
+                  <span key={f} className="text-sm bg-orange-50 text-orange-700 px-2 py-1 rounded-md border border-orange-100">{f}</span>
                 ))}
               </div>
               <div className="mt-4">
-                <a href="/academics" className="text-blue-600 font-medium">Explore {d.name.split(' ')[0]} →</a>
+                <a href="/academics" className="text-orange-600 font-medium">Explore {d.name.split(' ')[0]} →</a>
               </div>
             </div>
           ))}

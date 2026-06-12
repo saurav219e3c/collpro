@@ -12,7 +12,7 @@ export default function Process() {
         <div className="space-y-6">
           {steps.map((s, idx) => (
             <div key={s.title} className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 flex items-start">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold">{idx + 1}</div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-orange-600 text-white flex items-center justify-center font-semibold">{idx + 1}</div>
               <div className="ml-4">
                 <h3 className="text-xl font-semibold mb-2 text-gray-900">{s.title}</h3>
                 <p className="text-gray-600">{s.desc}</p>

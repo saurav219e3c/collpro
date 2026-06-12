@@ -13,8 +13,8 @@ export default function AboutPage() {
           <h1 className="text-4xl md:text-5xl font-bold leading-tight drop-shadow">About the Academy</h1>
           <p className="mt-4 text-lg md:text-xl text-white/90 max-w-2xl">We prepare students for meaningful careers and civic life through exceptional teaching, research, and community engagement.</p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Link href="#mission" className="bg-white text-blue-700 px-5 py-3 rounded-lg font-semibold hover:bg-gray-100">Our Mission</Link>
-            <Link href="#team" className="border border-white/40 text-white px-5 py-3 rounded-lg hover:bg-white hover:text-blue-700 transition">Meet the Team</Link>
+            <Link href="#mission" className="bg-white text-orange-700 px-5 py-3 rounded-lg font-semibold hover:bg-gray-100">Our Mission</Link>
+            <Link href="#team" className="border border-white/40 text-white px-5 py-3 rounded-lg hover:bg-white hover:text-orange-700 transition">Meet the Team</Link>
           </div>
         </div>
       </section>
@@ -40,7 +40,7 @@ export default function AboutPage() {
             </div>
 
             <aside className="space-y-4">
-              <div className="p-6 bg-blue-600 text-white rounded-lg">
+              <div className="p-6 bg-orange-600 text-white rounded-lg">
                 <h4 className="font-bold text-lg">Quick Facts</h4>
                 <ul className="mt-3 text-sm">
                   <li>Established: 1998</li>
@@ -63,19 +63,19 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <div className="text-3xl font-bold text-blue-600">25+</div>
+              <div className="text-3xl font-bold text-orange-600">25+</div>
               <p className="text-sm text-gray-600">Years</p>
             </div>
             <div>
-              <div className="text-3xl font-bold text-blue-600">15K+</div>
+              <div className="text-3xl font-bold text-orange-600">15K+</div>
               <p className="text-sm text-gray-600">Students</p>
             </div>
             <div>
-              <div className="text-3xl font-bold text-blue-600">200+</div>
+              <div className="text-3xl font-bold text-orange-600">200+</div>
               <p className="text-sm text-gray-600">Faculty</p>
             </div>
             <div>
-              <div className="text-3xl font-bold text-blue-600">98%</div>
+              <div className="text-3xl font-bold text-orange-600">98%</div>
               <p className="text-sm text-gray-600">Placement</p>
             </div>
           </div>
@@ -90,7 +90,7 @@ export default function AboutPage() {
 
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <article className="p-6 bg-gradient-to-b from-white to-gray-50 rounded-xl shadow-lg border border-gray-100">
-              <div className="h-36 bg-blue-200 rounded-md mb-4" />
+              <div className="h-36 bg-orange-200 rounded-md mb-4" />
               <h3 className="font-semibold">Dr. Anya Patel</h3>
               <p className="text-sm text-gray-600">President</p>
               <p className="mt-3 text-sm text-gray-600">Leading institutional strategy and academic growth initiatives.</p>
@@ -135,12 +135,12 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-blue-600 text-white py-12">
+      <section className="bg-orange-600 text-white py-12">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h3 className="text-2xl font-bold">Ready to learn more?</h3>
           <p className="mt-2 text-white/90">Contact our admissions team or explore programs to find the right path.</p>
           <div className="mt-6 flex justify-center gap-4">
-            <Link href="/admissions" className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold">Admissions</Link>
+            <Link href="/admissions" className="bg-white text-orange-700 px-6 py-3 rounded-lg font-semibold">Admissions</Link>
             <Link href="/contact" className="border border-white/40 text-white px-6 py-3 rounded-lg">Contact Us</Link>
           </div>
         </div>

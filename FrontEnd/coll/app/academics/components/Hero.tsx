@@ -8,7 +8,7 @@ export default function Hero() {
           placements to prepare compassionate, skilled healthcare professionals.
         </p>
         <div className="mt-6">
-          <a href="/admissions" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow">Apply Now</a>
+          <a href="/admissions" className="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold shadow">Apply Now</a>
         </div>
       </div>
     </section>

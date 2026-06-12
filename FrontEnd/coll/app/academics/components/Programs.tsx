@@ -15,8 +15,8 @@ export default function Programs() {
             <div key={p.title} className="p-6 bg-gradient-to-b from-white to-gray-50 rounded-xl shadow-lg border border-gray-100">
               <h3 className="text-xl font-semibold text-gray-900">{p.title}</h3>
               <p className="text-gray-600 mt-2">{p.desc}</p>
-              <div className="mt-4">
-                <Link href="/academics" className="text-blue-600 font-medium">View details →</Link>
+                <div className="mt-4">
+                <Link href="/academics" className="text-orange-600 font-medium">View details →</Link>
               </div>
             </div>
           ))}

@@ -18,7 +18,7 @@ export default function CampusFacilities() {
           {facilities.map((f) => (
             <div key={f.title} className="p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition">
               <div className="flex items-center gap-4 mb-4">
-                <div className="h-12 w-12 flex items-center justify-center rounded-md bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold">{f.title.charAt(0)}</div>
+                <div className="h-12 w-12 flex items-center justify-center rounded-md bg-gradient-to-r from-orange-400 to-orange-600 text-white font-bold">{f.title.charAt(0)}</div>
                 <h3 className="text-lg font-semibold text-gray-900">{f.title}</h3>
               </div>
               <p className="text-gray-600">{f.desc}</p>

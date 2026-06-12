@@ -13,7 +13,7 @@ export default function Testimonials() {
           {testimonials.map((t) => (
             <figure key={t.name} className="bg-white p-6 rounded-xl shadow-lg">
               <blockquote className="text-gray-800 italic text-lg">“{t.quote}”</blockquote>
-              <figcaption className="mt-3 font-semibold text-blue-600">{t.name} <span className="text-gray-600 font-normal">— {t.role}</span></figcaption>
+              <figcaption className="mt-3 font-semibold text-orange-600">{t.name} <span className="text-gray-600 font-normal">— {t.role}</span></figcaption>
             </figure>
           ))}
         </div>

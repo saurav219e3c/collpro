@@ -46,8 +46,8 @@ export default function Landing() {
                 World-class education with cutting-edge facilities and experienced faculty dedicated to your success.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link href="#academics" className="bg-white text-blue-600 px-6 md:px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Explore Academics</Link>
-                <Link href="#about" className="border-2 border-white text-white px-6 md:px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">Learn More</Link>
+                <Link href="#academics" className="bg-white text-orange-600 px-6 md:px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Explore Academics</Link>
+                <Link href="#about" className="border-2 border-white text-white px-6 md:px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-orange-600 transition">Learn More</Link>
               </div>
             </div>
           </div>
@@ -71,19 +71,19 @@ export default function Landing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">25+</div>
+              <div className="text-4xl font-bold text-orange-600 mb-2">25+</div>
               <p className="text-gray-600 font-semibold">Years of Excellence</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">15K+</div>
+              <div className="text-4xl font-bold text-orange-600 mb-2">15K+</div>
               <p className="text-gray-600 font-semibold">Active Students</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">200+</div>
+              <div className="text-4xl font-bold text-orange-600 mb-2">200+</div>
               <p className="text-gray-600 font-semibold">Faculty Members</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">98%</div>
+              <div className="text-4xl font-bold text-orange-600 mb-2">98%</div>
               <p className="text-gray-600 font-semibold">Placement Rate</p>
             </div>
           </div>
@@ -100,13 +100,13 @@ export default function Landing() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden">
-              <div className="h-48 bg-gradient-to-r from-blue-400 to-blue-600"></div>
+              <div className="h-48 bg-gradient-to-r from-orange-400 to-orange-600"></div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">BSc Nursing</h3>
                 <p className="text-gray-600 mb-4">
                   Comprehensive nursing program combining clinical practice and theoretical knowledge to prepare professional nurses.
                 </p>
-                <Link href="/academics" className="text-blue-600 font-semibold hover:text-blue-800 transition">Learn More →</Link>
+                <Link href="/academics" className="text-orange-600 font-semibold hover:text-orange-800 transition">Learn More →</Link>
               </div>
             </div>
 
@@ -117,7 +117,7 @@ export default function Landing() {
                 <p className="text-gray-600 mb-4">
                   Auxiliary Nurse Midwifery (ANM) and General Nursing &amp; Midwifery (GNM) programs with strong community health focus.
                 </p>
-                <Link href="/academics" className="text-blue-600 font-semibold hover:text-blue-800 transition">Learn More →</Link>
+                <Link href="/academics" className="text-orange-600 font-semibold hover:text-orange-800 transition">Learn More →</Link>
               </div>
             </div>
 
@@ -128,7 +128,7 @@ export default function Landing() {
                 <p className="text-gray-600 mb-4">
                   Short and long-term paramedical programs including lab technology, radiography, physiotherapy assistance and allied health training.
                 </p>
-                <Link href="/academics" className="text-blue-600 font-semibold hover:text-blue-800 transition">Learn More →</Link>
+                <Link href="/academics" className="text-orange-600 font-semibold hover:text-orange-800 transition">Learn More →</Link>
               </div>
             </div>
           </div>
@@ -155,7 +155,7 @@ export default function Landing() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-600 text-white">
+                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-orange-600 text-white">
                   <span className="text-xl">✓</span>
                 </div>
               </div>
@@ -169,7 +169,7 @@ export default function Landing() {
 
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-600 text-white">
+                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-orange-600 text-white">
                   <span className="text-xl">✓</span>
                 </div>
               </div>
@@ -183,7 +183,7 @@ export default function Landing() {
 
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-600 text-white">
+                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-orange-600 text-white">
                   <span className="text-xl">✓</span>
                 </div>
               </div>
@@ -197,7 +197,7 @@ export default function Landing() {
 
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-600 text-white">
+                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-orange-600 text-white">
                   <span className="text-xl">✓</span>
                 </div>
               </div>
@@ -213,13 +213,13 @@ export default function Landing() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-r from-orange-600 to-orange-800 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-4">Ready to Start Your Journey?</h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-orange-100 mb-8">
             Join thousands of successful graduates who have transformed their futures with us.
           </p>
-          <Link href="#admissions" className="bg-white text-blue-600 px-10 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition">Apply Today</Link>
+          <Link href="#admissions" className="bg-white text-orange-600 px-10 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition">Apply Today</Link>
         </div>
       </section>
 

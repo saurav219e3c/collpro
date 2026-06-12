@@ -15,7 +15,7 @@ export default function Faculty() {
           {faculty.map((f) => (
             <article key={f.email} className="p-6 bg-gradient-to-b from-white to-gray-50 rounded-xl shadow-lg border border-gray-100">
               <div className="flex items-start gap-4">
-                <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-semibold">{f.name.split(' ').map(n=>n[0]).slice(0,2).join('')}</div>
+                <div className="w-16 h-16 rounded-full bg-orange-100 flex items-center justify-center text-orange-700 font-semibold">{f.name.split(' ').map(n=>n[0]).slice(0,2).join('')}</div>
                 <div>
                   <h3 className="font-semibold text-gray-900">{f.name}</h3>
                   <p className="text-sm text-gray-600">{f.title}</p>
@@ -28,7 +28,7 @@ export default function Faculty() {
         </div>
 
         <div className="mt-6 text-center">
-          <a href="/about#team" className="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold shadow">View full faculty directory</a>
+          <a href="/about#team" className="inline-block bg-orange-600 text-white px-5 py-2 rounded-lg font-semibold shadow">View full faculty directory</a>
         </div>
       </div>
     </section>

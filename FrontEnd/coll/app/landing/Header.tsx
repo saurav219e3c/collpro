@@ -25,8 +25,8 @@ export default function Header() {
 
   const navClass = (p: string) =>
     isActive(p)
-      ? "text-blue-600 font-semibold"
-      : "text-gray-700 hover:text-blue-600 transition";
+      ? "text-orange-600 font-semibold"
+      : "text-gray-700 hover:text-orange-600 transition";
 
   useEffect(() => {
     const onTouchStart = (e: TouchEvent) => {
@@ -79,7 +79,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center space-x-2" onClick={() => setOpen(false)}>
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">A</span>
               </div>
               <span className="text-xl font-bold text-gray-900">Academy</span>
@@ -96,8 +96,9 @@ export default function Header() {
 
             <div className="flex items-center">
               {/* Apply button visible on md+ */}
-              <div className="hidden md:block">
-                <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+              <div className="hidden md:flex items-center gap-3">
+                <Link href="/login" className="hidden md:inline-block border border-orange-600 text-orange-600 px-4 py-2 rounded-lg font-medium hover:bg-orange-50 transition">Student Login</Link>
+                <button className="bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition">
                   Apply Now
                 </button>
               </div>
@@ -106,7 +107,7 @@ export default function Header() {
               <button
                 aria-label="Open menu"
                 onClick={() => setOpen(true)}
-                className="md:hidden ml-3 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="md:hidden ml-3 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
               >
                 <svg className="h-6 w-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -133,7 +134,7 @@ export default function Header() {
       >
         <div className="h-16 flex items-center justify-between px-4 border-b">
           <Link href="/" className="flex items-center space-x-2" onClick={() => setOpen(false)}>
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">A</span>
             </div>
             <span className="font-semibold">Academy</span>
@@ -146,14 +147,15 @@ export default function Header() {
         </div>
 
           <nav className="p-4 space-y-4">
-          <Link href="/" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/') ? 'text-blue-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/') ? 'page' : undefined}>Home</Link>
-          <Link href="/academics" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/academics') ? 'text-blue-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/academics') ? 'page' : undefined}>Academics</Link>
-          <Link href="/about" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/about') ? 'text-blue-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/about') ? 'page' : undefined}>About</Link>
-          <Link href="/admissions" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/admissions') ? 'text-blue-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/admissions') ? 'page' : undefined}>Admissions</Link>
-          <Link href="/contact" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/contact') ? 'text-blue-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/contact') ? 'page' : undefined}>Contact</Link>
+          <Link href="/" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/') ? 'text-orange-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/') ? 'page' : undefined}>Home</Link>
+          <Link href="/academics" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/academics') ? 'text-orange-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/academics') ? 'page' : undefined}>Academics</Link>
+          <Link href="/about" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/about') ? 'text-orange-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/about') ? 'page' : undefined}>About</Link>
+          <Link href="/admissions" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/admissions') ? 'text-orange-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/admissions') ? 'page' : undefined}>Admissions</Link>
+          <Link href="/contact" onClick={() => setOpen(false)} className={`block text-lg ${isActive('/contact') ? 'text-orange-600 font-semibold' : 'text-gray-800'}`} aria-current={isActive('/contact') ? 'page' : undefined}>Contact</Link>
 
-          <div className="pt-4">
-            <button onClick={() => setOpen(false)} className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">Apply Now</button>
+          <div className="pt-4 space-y-3">
+            <Link href="/login" onClick={() => setOpen(false)} className="block w-full text-center text-orange-600 font-semibold px-4 py-3 rounded-lg border border-orange-100 hover:bg-orange-50">Student Login</Link>
+            <button onClick={() => setOpen(false)} className="w-full bg-orange-600 text-white px-4 py-3 rounded-lg">Apply Now</button>
           </div>
         </nav>
       </aside>
